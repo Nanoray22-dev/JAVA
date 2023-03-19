@@ -1,4 +1,4 @@
-package JAVA;
+
 
 public class factorialFor {
     public static void main(String[] args){

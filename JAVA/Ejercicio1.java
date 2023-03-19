@@ -1,6 +1,6 @@
 //Cargar un programa que cargue tres numero y diga cual es menor y cual es mayor 
 
-package JAVA;
+
 
 import java.io.BufferedReader;
 import java.io.IOException;

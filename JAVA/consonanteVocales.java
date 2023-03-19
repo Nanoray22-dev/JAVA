@@ -1,4 +1,4 @@
-package JAVA;
+
 
 public class consonanteVocales {
      // Ejemplo de uso de break en un switch
