@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Ejercicio5 {
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Type a numeber");
+        System.out.println("Type a number");
         int number = scanner.nextInt();
 
         int factorial = 1;
