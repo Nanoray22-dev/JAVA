@@ -7,11 +7,11 @@ public class numberPar {
       Scanner input = new Scanner(System.in);
       System.out.println("ingresa un numero");
       int number = input.nextInt();
-      System.out.println("los numeros pares desde 0 " + number + " es: ");
+      System.out.println("los numeros pares desde  " + number + " es: ");
       for(int i = 0; i <= number; i += 2){
         System.out.println(i + " ");
         
-        boolean espar = (number < 20)? true : false;
+        boolean espar = (number <= 20)? true : false;
       String resultNumber = Boolean.toString(espar);
       System.out.println(resultNumber);
       }
