@@ -1,4 +1,4 @@
-package Java;
+package Java.OOP2;
 
 public class overloaded {
     public static void main(String[] args){

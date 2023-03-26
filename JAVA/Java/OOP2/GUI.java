@@ -1,4 +1,4 @@
-package Java;
+package Java.OOP2;
 import javax.swing.JOptionPane;
 public class GUI {
     // this is how can u show of message in second screen

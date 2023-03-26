@@ -6,15 +6,15 @@ public class Calculo {
 
         // Pedir al usuario las entradas requeridas
         System.out.print("Ingrese el nombre del empleado: ");
-        String nombre = input.nextLine();
+        String name = input.nextLine();
         System.out.print("Ingrese el salario mensual del empleado: ");
         double salarioMensual = input.nextDouble();
         System.out.print("Ingrese la cantidad de años trabajados: ");
-        int anios = input.nextInt();
+        int years = input.nextInt();
         System.out.print("Ingrese la cantidad de meses trabajados: ");
-        int meses = input.nextInt();
+        int months = input.nextInt();
         System.out.print("Ingrese la cantidad de días trabajados: ");
-        int dias = input.nextInt();
+        int days = input.nextInt();
         input.nextLine(); // Consumir el caracter de nueva línea pendiente
         System.out.print("¿El empleado ha sido preavisado? (Sí/No): ");
         String preavisado = input.nextLine();
@@ -26,7 +26,7 @@ public class Calculo {
         String salarioNavidad = input.nextLine();
 
         // Realizar los cálculos correspondientes
-        double tiempoTrabajado = anios + (meses / 12.0) + (dias / 365.0);
+        double tiempoTrabajado = years + (months / 12.0) + (days / 365.0);
 
         double preaviso;
         if (preavisado.equalsIgnoreCase("Sí")) {
@@ -37,7 +37,7 @@ public class Calculo {
 
         double cesantiaCalculo;
         if (cesantia.equalsIgnoreCase("Sí")) {
-            cesantiaCalculo = salarioMensual * anios;
+            cesantiaCalculo = salarioMensual * years;
         } else {
             cesantiaCalculo = salarioMensual * tiempoTrabajado;
         }
@@ -59,7 +59,7 @@ public class Calculo {
         double montoTotal = preaviso + cesantiaCalculo + vacacionesCalculo + salarioNavidadCalculo;
 
         // Imprimir los resultados
-        System.out.println("Nombre solicitado: " + nombre);
+        System.out.println("Nombre solicitado: " + name);
         System.out.println("Monto del Preaviso: " + preaviso);
         System.out.println("Monto de la Cesantía: " + cesantiaCalculo);
         System.out.println("Monto de las Vacaciones: " + vacacionesCalculo);

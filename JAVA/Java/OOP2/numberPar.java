@@ -1,4 +1,4 @@
-package Java;
+package Java.OOP2;
 
 import java.util.Scanner;
 
@@ -11,7 +11,7 @@ public class numberPar {
       for(int i = 0; i <= number; i += 2){
         System.out.println(i + " ");
         
-        boolean espar = (number <= 20)? true : false;
+      boolean espar = (number <= 20)? true : false;
       String resultNumber = Boolean.toString(espar);
       System.out.println(resultNumber);
       }

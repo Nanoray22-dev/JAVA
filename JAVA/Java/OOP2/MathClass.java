@@ -1,4 +1,4 @@
-package Java;
+package Java.OOP2;
 import java.util.Scanner;
 public class MathClass {
     public static void main(String[] args){

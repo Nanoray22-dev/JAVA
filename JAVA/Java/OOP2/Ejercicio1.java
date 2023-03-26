@@ -1,3 +1,4 @@
+package Java.OOP2;
 //Cargar un programa que cargue tres numero y diga cual es menor y cual es mayor 
 
 

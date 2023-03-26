@@ -8,6 +8,7 @@ public class Main4 {
         Friend friend4 = new Friend("Sandy");
 
         Friend.displayFriends();
+        
 
      
 

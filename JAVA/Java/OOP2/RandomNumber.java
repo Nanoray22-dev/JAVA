@@ -1,4 +1,4 @@
-package Java;
+package Java.OOP2;
 import java.util.Random;
 public class RandomNumber {
     public static void main(String[] args){
