@@ -16,7 +16,7 @@ public class Main {
         Border border = BorderFactory.createLineBorder(Color.green,3);
 
         JLabel label = new JLabel();
-        label.setText("Bro, do you 8even code?");
+        label.setText("Bro, do you even code?");
         label.setIcon(image);
         label.setHorizontalTextPosition(JLabel.CENTER);
         label.setVerticalTextPosition(JLabel.TOP);
