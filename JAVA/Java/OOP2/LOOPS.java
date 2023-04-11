@@ -5,8 +5,24 @@ public class LOOPS {
     public static void main(String[] aStrings){
         // While and Do While
 
-        Scanner scanner  = new Scanner(System.in);
-    //     String name = "";
+        try (Scanner scanner = new Scanner(System.in)) {
+            int rows;
+            String symbol = "";
+
+            System.out.println("Enter # of rows: ");
+            rows = scanner.nextInt();
+            System.out.println("Enter # of columns: ");
+            System.out.println("Enter symbol to use: ");
+            symbol = scanner.next();
+
+            for(int i=1; i <= rows; i++){
+                System.out.println();
+                for(int j=1; j <= rows; j++){
+                    System.out.println(symbol);
+                }
+
+            }
+        }
 
     //    do{
     //         System.out.println("Type your name");
@@ -24,23 +40,5 @@ public class LOOPS {
 
         // nested loops = loops inside of a loop
 
-        int rows;
-        int columns;
-        String symbol = "";
-
-        System.out.println("Enter # of rows: ");
-        rows = scanner.nextInt();
-        System.out.println("Enter # of columns: ");
-        columns = scanner.nextInt();
-        System.out.println("Enter symbol to use: ");
-        symbol = scanner.next();
-
-        for(int i=1; i <= rows; i++){
-            System.out.println();
-            for(int j=1; j <= rows; j++){
-                System.out.println(symbol);
-            }
-
-        }
     }
 }

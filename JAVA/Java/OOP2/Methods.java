@@ -14,7 +14,7 @@ public class Methods {
     // String result = name.trim();
     // String result = name.replace("o","azil");
 
-    System.out.println("result");
+    System.out.println(name);
     }
     
 }

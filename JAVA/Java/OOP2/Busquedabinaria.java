@@ -10,23 +10,24 @@ public class Busquedabinaria {
         int limiteSuperior = numeros.length - 1;
         // int numeroBusqueda = 68;
         System.out.println("Type the number");
-        Scanner number = new Scanner(System.in);
-        int numeroBusquedas = number.nextInt();
-        boolean encontrado = false;
-        while ((limiteInferior <= limiteSuperior) && (!encontrado)) {
-            mitad = (limiteInferior + limiteSuperior) / 2;
-            if (numeros[mitad] == numeroBusquedas) {
-                encontrado = true; // ¡encontrado!
+        try (Scanner number = new Scanner(System.in)) {
+            int numeroBusquedas = number.nextInt();
+            boolean encontrado = false;
+            while ((limiteInferior <= limiteSuperior) && (!encontrado)) {
+                mitad = (limiteInferior + limiteSuperior) / 2;
+                if (numeros[mitad] == numeroBusquedas) {
+                    encontrado = true; // ¡encontrado!
+                }
+                else if (numeros[mitad] > numeroBusquedas) {
+                    limiteSuperior = mitad - 1; // buscar en la primera mitad
+                } else {
+                    limiteInferior = mitad + 1; // buscar en la segunda mitad
+                }
             }
-            else if (numeros[mitad] > numeroBusquedas) {
-                limiteSuperior = mitad - 1; // buscar en la primera mitad
-            } else {
-                limiteInferior = mitad + 1; // buscar en la segunda mitad
-            }
+            if (encontrado)
+                System.out.println("He encontrado el número ");
+            else
+                System.out.println("No he encontrado el número");
         }
-        if (encontrado)
-            System.out.println("He encontrado el número ");
-        else
-            System.out.println("No he encontrado el número");
     }
 }
