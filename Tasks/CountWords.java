@@ -1,3 +1,4 @@
+package Tasks;
 import java.util.HashMap;
 
 public class CountWords {
