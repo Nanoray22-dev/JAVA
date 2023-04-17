@@ -52,7 +52,6 @@ public class UserController {
       userRepository.deleteById(id);
       return "User deleted successfully";
     } catch (Exception e) {
-      // TODO: handle exception
       return "User not found";
     }
   }

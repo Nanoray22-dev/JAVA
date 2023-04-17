@@ -1,3 +1,4 @@
+package Meta;
 import java.util.Scanner;
 
 public class TechnicalTests2 {
